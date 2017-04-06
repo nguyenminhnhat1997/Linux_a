@@ -2,6 +2,72 @@
 
 - Liệt kê thông tin về file
 
+### Liệt kê file sử dụng ls với no option 
+
+- ls
+
+- Chỉ liệt kê ra tên, chúng ta không thể xem chi tiết như type, size, ngày sửa đổi và thời gian, quyền và các liên kết
+
+### Liệt kê file với lựa chọn `-l`
+
+- ls -l
+
+- show file or directory, size, ngày tháng và thời gian sửa đổi, tên file and directory, chủ sở hữu file, và quyền truy cập.
+
+### Liệt kê file với lựa chọn `-a`(xem file ẩn)
+
+- ls -a
+
+- file ẩn băt đầu với dấu `.`
+
+### Liệt kê file với định dạng mà con người có  thể đọc đc với option `-lh`.
+
+ - ls -lh
+ 
+- show kích thước ở định dạng mà con người có thể đọc đc
+
+### List file and directory với dấu `/` ở cuối
+
+- ls -F
+
+- use `-F` sẽ thêm `/` ở cuối mỗi directory
+
+### Liệt kê tập tin và thư mục theo thứ tự ngược lại 
+
+- ls -r
+
+### list cây thư mục 
+
+- ls -R
+
+### Hiển thị danh sách các file trong directory
+
+- ls -l /tmp
+
+### Hiển thị thông tin của thư mục
+
+- ls -ld /tmp
+
+### show list chỉnh sửa mới nhất của file or directory
+
+- ls -ltr
+
+### sắp xếp theo kích thước file 
+
+- ls -lS
+
+### Hiển thị số inode number
+
+- ls -i
+
+### show version của command 
+
+- ls --version
+
+### Hiển thị UID và GID của file
+
+- ls -n
+
 ## cd
 
 - Chuyển đên 1 **thư mục** nào đó
