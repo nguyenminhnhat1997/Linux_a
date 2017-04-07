@@ -1,4 +1,16 @@
-## grep 
+[1. grep](#grep)
+
+[2. sort](#sort)
+
+[3. uniq](#uniq)
+
+[4. strings](#string)
+
+[5. base64](#base64)
+
+<a name="grep"></a>
+
+## ~> grep 
 
 - Lọc file, more file
 
@@ -61,6 +73,29 @@
 
 - `grep -C 2 -i "string"`.
 
-##
+### Tìm kiếm tất cả các file trong thư mục hiện tại và thư mục con của nó với `-r`.
+
+- `grep -r "string" *`
+
+### Tìm kiếm trên 1 dòng các chuỗi có trong file thì -> trống, không có -> nội dung có trong file đó vs `-v`.
+
+- `grep -v "string" file`
+
+### Hiển thị dòng không khơp với các mẫu đc đưa ra.
+
+- `grep -v -e "string1" -e "string2"`
+
+### Hiển thị chỉ tên file vs `-l`
+
+- `grep -l this demo_*`
+
+### show ra chỉ 1 chuỗi use `-o`
+
+- `grep -o "is.*line" demo_file`
+
+### show số dòng kết quả use `-n`
+
+- `grep -n "go" demo_text`
+
 
 
