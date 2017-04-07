@@ -187,43 +187,43 @@
 
 ### Tìm file với `~`
 
-- find ~ -type f -name "kyras.txt"
+- find ~ -type f -name "kyras.txt".
 
 ### Tìm file đã sữa đổi sau N ngày trở lại
 
-- find / -mtime 50
+- find / -mtime 50.
 
 ### Tìm file đã truy cập trong N ngày qua
 
-- find / -atime 50
+- find / -atime 50.
 
 ### Tìm file đã sữa đổi trong 1 khoảng ngày xác định
 
-- find / -mtime +50 -mtime -100: từ 50-100 day
+- find / -mtime +50 -mtime -100: từ 50-100 day.
 
 ### Tìm file đã thay đổi trong 1 hour trước
 
-- find /home -mmin -60
+- find /home -mmin -60.
 
 ### Tìm file đã thay đổi trong N phút trước
 
-- find /home -cmin -60
+- find /home -cmin -60.
 
 ### Tìm file đã truy cập trong 1 hour qua
 
-- find / -amin -60
+- find / -amin -60.
 
 ### Tìm file or directory dựa trên kích thước 
 
-- find / -size 50M: dựa vào size
+- find / -size 50M: dựa vào size.
 
-- find / -size +50M -size -100M: 1 khoảng xác định
+- find / -size +50M -size -100M: 1 khoảng xác định.
 
 ### Tìm các file or directory rỗng 
 
-- find /tmp -type f -empty (file rỗng)
+- find /tmp -type f -empty (file rỗng).
 
-- find ~/ -type d -empty (all directory rỗng)
+- find ~/ -type d -empty (all directory rỗng).
 
 ### Liệt kê ra các tập tin đã tìm thấy
 
@@ -237,51 +237,60 @@
 
 ## du
 
-- Kiểm tra việc sử dụng đĩa của các file and directory trên 1 máy
+- Kiểm tra việc sử dụng đĩa của các file and directory trên 1 máy.
 
-- cho biết thông tin nội dung, kích thước của file anđ directory
+- cho biết thông tin nội dung, kích thước của file anđ directory.
+
 ### Sử dụng du
 
 1.
 
-- Hiển thị tóm lượt cách sử dụng đĩa của thư mục, và thư mục con của chúng
+- Hiển thị tóm lượt cách sử dụng đĩa của thư mục, và thư mục con của chúng.
 
-- số đằng trước hiển thị số lượng các khối đĩa 
+- số đằng trước hiển thị số lượng các khối đĩa. 
 
-- du /home
+- du /home.
 
 2.
 
-- sử dụng thêm `-h` để thấy đc định dạng mà chúng ta có thể đọc được
+- sử dụng thêm `-h` để thấy đc định dạng mà chúng ta có thể đọc được.
 
-- du -h /home
+- du -h /home.
 
 3.
 
 - Tóm tắt toàn bộ kích thước của direntory sử dụng thêm `-s`.
 
-- du -sh /home 
+- du -sh /home. 
 
 4.
 
-- du -a /home
+- du -a /home.
 
-- Hiển thị tất cả việc sử dụng đĩa của các file và thư mục  với `-a`
+- Hiển thị tất cả việc sử dụng đĩa của các file và thư mục  với `-a`.
 
-- Tương tự ta sử dụng thêm `h` để hiện thị thông số mà con người hiểu đc 
+- Tương tự ta sử dụng thêm `h` để hiện thị thông số mà con người hiểu đc.
 
-- du -ah /home
-
-5.
-
-- Tính toán và hiển thị việc sử dụng đĩa của tất cả các file và thư mục, nhưng loại trừ file mà người dùng quy định với option `--exclude`
-
-- du -ah --exclude="\*.txt" /home
+- du -ah /home.
 
 5.
 
-- Hiển thị việc sử dụng đĩa dựa trên việc thay đổi thời gian với `-time`
+- Tính toán và hiển thị việc sử dụng đĩa của tất cả các file và thư mục, nhưng loại trừ file mà người dùng quy định với option `--exclude`.
 
-- du -ha --time /home
+- du -ah --exclude="\*.txt" /home.
 
+5.
 
+- Hiển thị việc sử dụng đĩa dựa trên việc thay đổi thời gian với `-time`.
+
+- du -ha --time /home.
+
+### file
+
+- Cố gắng phân loại file, và show type file trong 1 thư mục or 1 file xác định.
+
+- file /etc/nhat : show type của file nhat.
+
+- file /etc/\* : show type của all các file in directory hiện tại.
+
+- file /etc/[a-g]\*: kết hợp vs wilcard.
