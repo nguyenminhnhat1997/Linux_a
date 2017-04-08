@@ -97,5 +97,36 @@
 
 - `grep -n "go" demo_text`
 
+## ~> sort
+
+- Sắp xếp nội dung của 1 file theo 1 thứ tự cụ thể.
+
+### Mặc định sắp xếp theo mã ascii
+
+- `sort file`
+
+### Loại bỏ các nội dung trùng lập, chỉ hiển thị 1
+
+- `sort -u file`
+
+### Sắp xếp số với `-n`.
+
+- `sort -n file`
+
+### Sắp xếp nhiều file cùng 1 lúc
+
+- `sort -n file1 file2`
+
+### Sắp xếp nhiều file và xóa các bản trùng nhau
+
+- `sort -nu file1 file2`
+
+### sort file on the basis of 1st field
+
+- `sort -t"," -k1,1 file`
+
+- `sort -t"," -k2,2 file`
+
+- `sort -t"," -k1nr,1 file`
 
 
