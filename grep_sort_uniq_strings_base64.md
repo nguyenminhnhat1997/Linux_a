@@ -4,7 +4,7 @@
 
 [3. uniq](#uniq)
 
-[4. strings](#string)
+[4. strings](#strings)
 
 [5. base64](#base64)
 
@@ -165,5 +165,26 @@
 
 - `-f`: cũng tương tự nhưng nó bỏ qua cụm, vd: abc_bcc_asz -> `-f 1` bỏ qua abc chỉ so sánh 2 cái sau.
 
+<a name="strings"></a>
+
+## strings
+
+- Tìm kiếm trong file binary cho 1 chuỗi xác định.
+
+- Mặc định (strings file_binary) chỉ hiển thị những kí tự in được từ các đoạn zữ liệu của object file
+
+- Muốn tìm kiếm đầy đủ file -> use `-q`
+
+- `strings -s file_binary`
+
+### Tìm kiếm thông tin bản quyền.
+
+- `strings /bin/ls | grep Copyright`
+
+### Use strings trên nhiều file
+
+- `strings -f /bin/* | grep Copy`
+
+- `-f`: hiện đường dẫn của kqua ở trước mỗi dòng.
 
 
