@@ -97,6 +97,8 @@
 
 - `grep -n "go" demo_text`
 
+<a name="sort"></a>
+
 ## ~> sort
 
 - Sắp xếp nội dung của 1 file theo 1 thứ tự cụ thể.
@@ -128,5 +130,40 @@
 - `sort -t"," -k2,2 file`
 
 - `sort -t"," -k1nr,1 file`
+
+<a name="uniq"></a>
+
+## uniq
+
+- Loại bỏ or phát hiện bản sao
+
+- Syntax: `uniq [-option]`
+
+### Mặc định sẽ remove các dòng trùng lập in file.
+
+- `uniq file`
+
+### Đếm số lần trùng lập use `-c`.
+
+- `uniq -c file`
+
+### Chỉ in các dòng có sự trùng lập trong file use `-d` `-D`.
+
+- `uniq -d file`
+
+### In dòng không có sự trùng lập use `-u`.
+
+- `uniq -u file`
+
+### So sánh hạn chế với n kí tự đầu tiên use `-w`.
+
+- `uniq -c -w 8 file`: chỉ so sánh 8 kí tự đầu tiên của dòng
+
+### Không so sánh n kí tự đầu tiên của dòng use `-s`.
+
+- `uniq -s 2 file`: bỏ qua 2 kí tự đầu k so sánh
+
+- `-f`: cũng tương tự nhưng nó bỏ qua cụm, vd: abc_bcc_asz -> `-f 1` bỏ qua abc chỉ so sánh 2 cái sau.
+
 
 
