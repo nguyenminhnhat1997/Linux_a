@@ -41,6 +41,8 @@
 - `tr -cd [:print:] < file.txt`
 
 ### Xóa tất cả các digits từ string use 
+
+
 <a name=""></a>
 <a name=""></a>
 <a name=""></a>
