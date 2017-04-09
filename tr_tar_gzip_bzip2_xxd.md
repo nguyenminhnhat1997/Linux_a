@@ -40,10 +40,43 @@
 
 - `tr -cd [:print:] < file.txt`
 
-### Xóa tất cả các digits từ string use 
-
-
 <a name=""></a>
+
+## tar
+
+<a name="tar"></a>
+
+- tạo tar lưu trữ
+
+- làm chủ các tập tin
+
+- trích xuất 1 file hoặc thư mục
+
+- xem nội dung lưu trữ
+
+- xác nhận tính toàn vẹn của tar archives
+
+### Tạo 1 kho lưu trữ với tar command (không có nén) use `cvf`
+
+- `tar cvf archive_name.tar dirname/`
+
+> c: tạo 1 new archive
+
+> v: danh sách các file đc xử lí
+
+> f: theo tên kho tệp lưu trữ
+
+### Tạo 1 tar gzip archive use `cvzf`
+
+- `tar cvzf archive_name.tar.gz dirname/` : `.tar.gz` = `.tgz`
+
+### `cvfj` cho bzip2
+
+- `tar cvfj archive_name.tar.bz2 dirname/`: `.tar.bz2` = `.tb2`
+
+- bzip2 mất nhiều thời gian nén và giải nén hơn gzip và size lớn hơn 
+
+
 <a name=""></a>
 <a name=""></a>
 <a name=""></a>
