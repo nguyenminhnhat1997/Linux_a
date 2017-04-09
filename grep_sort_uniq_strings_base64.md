@@ -169,6 +169,8 @@
 
 ## strings
 
+- Tìm và hiển thị in được 1 chuỗi trong 1 thực thi nhất định, file binary or object file
+
 - Tìm kiếm trong file binary cho 1 chuỗi xác định.
 
 - Mặc định (strings file_binary) chỉ hiển thị những kí tự in được từ các đoạn zữ liệu của object file
@@ -176,6 +178,10 @@
 - Muốn tìm kiếm đầy đủ file -> use `-q`
 
 - `strings -s file_binary`
+
+### Tìm kiếm kết hợp vs grep
+
+- `strings -n 2 file_binary | grep ls`
 
 ### Tìm kiếm thông tin bản quyền.
 
@@ -187,4 +193,16 @@
 
 - `-f`: hiện đường dẫn của kqua ở trước mỗi dòng.
 
+<a name="base64"></a>
 
+## base64
+
+- Use để mã hóa or giải mã.
+
+### Mã hóa 1 đoạn text
+
+- `echo -n "abc" | base64`
+
+### giải mã 1 đoạn text
+
+- `echo -n "dKzmnakds" | base64 -d`
