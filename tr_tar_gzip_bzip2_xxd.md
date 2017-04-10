@@ -76,7 +76,73 @@
 
 - bzip2 mất nhiều thời gian nén và giải nén hơn gzip và size lớn hơn 
 
+### Extract (untar) an archive use tar command
 
+- extract a `*.tar` file use `xvf`
+
+- `tar xvf archive_name.tar`
+
+### Extract a gzip tar archive (\*.tar.gz) use `xvzf`
+
+- `tar xvfz archive_name.tar.gz`
+
+### Extracta bzip tar archive (\*.tar.bz2) use `xvjf`
+
+- `tar xvfj archive_name.tar.bz2`
+
+### Liệt kê danh sách 1 archive use tar command
+
+- 1. Xem nội dung mà không extract use `tvf`
+
+- `tar tvf archive_name.tar`
+
+- 2. Xem `\*.tar.gz` mà không extract use `tvzf`
+
+- `tar tvzf archive_name.tar.gz`
+
+- 3. Xem `\*.tar.bz2` mà không extract use `tvjf`
+
+- `tar tvjf archive_name.tar.bz2`
+
+### extract 1 single file từ tar, tar.gz, tar.bz2 file 
+
+- `tar xvf archive_name.tar /path/to/file`
+
+- `tar xvfz archive_name.tar.gz /path/to/file`: gzip
+
+- `tar xvfj archive_name.tar.bz2 /path/to/file` : bzip2
+
+### Extract a single directory từ tar, tar.gz, tar.bz2 file cùng với thư mục con lun
+
+- `tar xvf archive_file.tar /path/to/dir/`
+
+- `tar xvf archive_file.tar /path/to/dir1 /path/to/dir2/`: nhiều directory
+
+- `tar xvfz archive_file.tar.gz /path/to/dir`: gzip
+
+- `tar xvfj archive_file.tar.bz2 /path/to/dir`: bzip2
+
+### Extract nhóm của các file tar, tar.gz, tar.bz2 
+
+- `tar xvf archive_file.tar --wildcards '*.pl'`
+
+### Thêm 1 file or directory đến 1 archive hiện có use `-r`
+
+- `tar rvf archive_name.tar newdir/`
+
+### Xác minh file có sẵn in tar use `-W`
+
+- `tar cvfW file_name.tar dir/`
+
+### Xác minh trước khi remove a directory/file từ 1 archive file or từ file systom
+
+- `tar tvfW file_name.tar`
+
+### Tìm điểm khác nhau giữa gzip archive file và file system
+
+- `tar dfz file_name.tgz`
+
+### Tìm khác nhau giữa bzip2 archive file and file 
 <a name=""></a>
 <a name=""></a>
 <a name=""></a>
