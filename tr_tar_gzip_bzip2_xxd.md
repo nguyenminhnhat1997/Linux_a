@@ -143,8 +143,16 @@
 - `tar dfz file_name.tgz`
 
 ### Tìm khác nhau giữa bzip2 archive file and file 
+
+- `tar dfj file_name.tar.bz2`
+
+### ước lượng tar archive size (KB) trước kho tạo file tar
+
+- `tar -cf - /directory/to/archvie/ | wc -c`
+
+- `czf`: gzip
+
+- `czj`: bzip2
+
 <a name=""></a>
-<a name=""></a>
-<a name=""></a>
-<a name=""></a>
-<a name=""></a>
+
